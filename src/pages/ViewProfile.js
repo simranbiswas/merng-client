@@ -1,4 +1,4 @@
-import React, { useContext, useState, useRef } from 'react';
+import React from 'react';
 import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 import { Item } from 'semantic-ui-react';
