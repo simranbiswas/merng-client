@@ -1,10 +1,9 @@
 import React, {useContext, useState} from 'react'
-import { Button, Form, Icon, Grid, Image,GridColumn,GridRow } from 'semantic-ui-react';
+import { Button, Form, Icon } from 'semantic-ui-react';
 import { useMutation } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import img1 from './img1.png';
 import img2 from './img2.png';
-import img from './media/img.png';
 
 //import { AuthContext } from '../context/auth';
 import { useForm } from '../util/hooks'; 
@@ -43,8 +42,8 @@ export default function Login(props) {
                <h2 className="page-intro"><Icon name='sign in' />Login  </h2>
                <h4 className="page-teal">Login to get latest the COVID-19 updates </h4>
                 
-                <img src={img1} style={{ position:'absolute',left:'-300px',height:'150px'}}></img>
-                <img src={img2} style={{ position:'absolute',right:'-300px',height:'150px',top:'100px'}}></img>
+                <img src={img1} style={{ position:'absolute',left:'-300px',height:'150px'}} alt="log"></img>
+                <img src={img2} style={{ position:'absolute',right:'-300px',height:'150px',top:'100px'}} alt="log1"></img>
                 <Icon name="user"></Icon>
                 <Form.Input 
                 

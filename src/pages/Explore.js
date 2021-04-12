@@ -1,6 +1,5 @@
-import React, { useContext, Component } from 'react';
-import { useQuery } from '@apollo/react-hooks';
-import { Grid, GridColumn, Transition, Table, GridRow, Item } from 'semantic-ui-react';
+import React, { Component } from 'react';
+import { Grid, Table, GridRow, Item } from 'semantic-ui-react';
 import rp from "request-promise";
 import moment from 'moment';
 import { Link } from 'react-router-dom';

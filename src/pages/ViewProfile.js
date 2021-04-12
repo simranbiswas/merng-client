@@ -1,18 +1,15 @@
 import React, { useContext, useState, useRef } from 'react';
 import gql from 'graphql-tag';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/react-hooks';
 import { Item } from 'semantic-ui-react';
-import {Button, Card, Form,  Grid, GridColumn, Transition, Image} from 'semantic-ui-react';
+import {Grid, Transition, Image} from 'semantic-ui-react';
 import PostCard from '../components/PostCard';
 import moment from 'moment';
 import img1 from './media/img1.png';
 import img2 from './media/img2.png';
 
-import { AuthContext } from '../context/auth';
-
 function ViewProfile(props) {
     const username = props.match.params.username;
-    const { user } = useContext(AuthContext);
 
     const {
         data: { viewProfile } = {}
@@ -27,7 +24,6 @@ function ViewProfile(props) {
     viewProf = <p>Loading profile..</p>;
   } else {
     const {
-      id,
       username,
       avatar,
       bio,
